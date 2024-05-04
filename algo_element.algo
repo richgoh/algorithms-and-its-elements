@@ -1,0 +1,55 @@
+
+//Checkpoint Algorithms and its elements
+
+/* Explication de l'algorithme :
+
+1.	Initialisation de trois variables pour compter les caractères,
+ les mots et les voyelles.
+2.	Boucle sur chaque caractère de la phrase.
+•	Incrémentation du compteur de caractères.
+•	Si le caractère est un espace, incrémentation du compteur de mots.
+•	Si le caractère est une voyelle, incrémentation du compteur de voyelles.
+3.	Ajout d'un mot supplémentaire au compteur de mots pour prendre en compte
+ le dernier mot.
+4.	Retour des trois valeurs calculées.*/
+
+
+// / Algorithme pour traiter une phrase
+ 
+// Entrée : une phrase qui se termine par un point
+// Sortie : les longueurs de la phrase, du nombre de mots et du nombre de voyelles
+
+FONCTION process_sentence(sentence):
+    //Initialisation des compteurs
+    char_count = 0
+    word_count = 0 
+    vowel_count = 0
+
+    // Lecture de la phrase caractère par caractère
+
+    // POUR CHAQUE caractère DANS sentence:
+        // Incrémentation du compteur de caractères
+
+        char_count = char_count + 1
+
+// Si le caractère est un espace, c'est un nouveau mot
+
+        // SI caractère = " " ALORS
+            // Incrémentation du compteur de mots
+
+            word_count = word_count + 1
+
+        // SINON SI caractère est une voyelle ALORS
+
+            // Incrémentation du compteur de voyelles
+
+            vowel_count = vowel_count + 1
+        FIN SI
+
+    // Compteur de mots final (il y a un mot en plus à la fin)
+
+    word_count ← word_count + 1
+
+    // Retour des trois valeurs calculées
+    RETOURNER char_count, word_count, vowel_count
+
