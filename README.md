@@ -11,6 +11,7 @@ Use three variables as counters.*/
 
 //
 
+
 function analyzeSentence(sentence) {
        // Initialiser les compteurs
     let length = 0;
