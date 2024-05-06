@@ -9,7 +9,7 @@ Each character will be treated separately.
 The last character is the point.
 Use three variables as counters.*/
 
-
+//
 
 function analyzeSentence(sentence) {
        // Initialiser les compteurs
